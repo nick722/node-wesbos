@@ -1,3 +1,9 @@
+Learn Node
+wesbos
+https://coursehunters.net/course/wes-boss-learn-node
+2017
+09:52:53
+
 ## What is this?
 
 Just you wait folks!
