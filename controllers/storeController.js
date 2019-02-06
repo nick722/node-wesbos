@@ -12,12 +12,12 @@ exports.addStore = (req, res) => {
   });
 };
 
-exports.createStore = (req, res) => {
-  const store = new Store(req.body);
-  store.save();
-  then(store => {
-    res.json(store);
-  }).catch(err => {
-    throw Error(err);
-  });
+exports.createStore = async (req, res) => {
+  try {
+    const store = new Store(req.body);
+    await store.save();
+    console.log("It worked!");
+  } catch (err) {
+    console.log(err);
+  }
 };
